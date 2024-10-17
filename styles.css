@@ -1,0 +1,111 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Styling */
+h1, h2 {
+    color: #005f73;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* Paragraph Styling */
+p {
+    margin: 10px 0;
+}
+
+/* Unordered list styling */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Ordered list styling */
+ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+/* Links Styling */
+a {
+    color: #0a9396;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Table Styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e0fbfc;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Footer Back to Home */
+footer {
+    margin-top: 20px;
+}
+
+/* Centering the container (for index.html) */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: left; /* Change to left-align text */
+}
+.intro-section {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertically aligns the text and image */
+    justify-content: space-between; /* Adds space between the text and image */
+    margin-bottom: 20px; /* Space between intro section and next header */
+}
+
+/* Text and Image within intro section */
+.intro-text {
+    flex: 1; /* Allow text to take up remaining space */
+}
+
+.intro-img {
+    margin-left: 20px; /* Adds space between text and image */
+}
+.profile-img {
+    width: 150px; /* Adjust width as needed */
+    height: auto;
+    border-radius: 50%; /* Optional: makes the image round */
+}
+
+
