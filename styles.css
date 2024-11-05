@@ -9,7 +9,14 @@ body {
 }
 
 /* Header Styling */
-h1, h2 {
+h1 {
+    color: #005f73;
+    text-align: left;
+    margin-bottom: 15px;
+    font-family: 'Lobster', cursive; /* Applying Google Font for h1 */
+}
+
+h2 {
     color: #005f73;
     text-align: left;
     margin-bottom: 15px;
@@ -24,22 +31,6 @@ p {
 ul {
     list-style-type: disc;
     margin-left: 20px;
-}
-
-/* Ordered list styling */
-ol {
-    list-style-type: decimal;
-    margin-left: 20px;
-}
-
-/* Links Styling */
-a {
-    color: #0a9396;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 /* Table Styling */
@@ -64,7 +55,60 @@ tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-/* Navigation Styling */
+/* Links Styling */
+a {
+    color: #0a9396;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Flexbox for Intro Section */
+.intro-section {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertically aligns the text and image */
+    justify-content: space-between; /* Adds space between text and image */
+    margin-bottom: 20px; /* Space between intro section and next header */
+}
+
+/* Text and Image within Intro Section */
+.intro-text {
+    flex: 1; /* Text takes up remaining space */
+}
+
+.intro-image {
+    margin-left: 20px; /* Space between text and image */
+}
+
+.profile-img {
+    width: 150px; /* Adjust width */
+    height: auto;
+    border-radius: 50%; /* Makes the image round */
+}
+figcaption {
+  background-color: rgb(0, 139, 113);
+  color: black;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+
+/* Biography Section Styling */
+#biography {
+    background-color: #e6e0fc; /* Distinct background for the biography section */
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below biography */
+}
+
+/* Styling for the list inside the biography */
+#biography ul {
+    list-style-type: square; /* Change list bullet to square */
+}
+
+/* Navigation Bar */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -79,33 +123,20 @@ nav ul li {
 /* Footer Back to Home */
 footer {
     margin-top: 20px;
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(122, 144, 233);
+    color: white;
 }
 
-/* Centering the container (for index.html) */
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    text-align: left; /* Change to left-align text */
-}
-.intro-section {
-    display: flex; /* Flexbox layout */
-    align-items: center; /* Vertically aligns the text and image */
-    justify-content: space-between; /* Adds space between the text and image */
-    margin-bottom: 20px; /* Space between intro section and next header */
-}
+/* Responsive Design using Media Queries */
+@media (max-width: 768px) {
+    .intro-section {
+        flex-direction: column; /* Stack text and image vertically on smaller screens */
+    }
 
-/* Text and Image within intro section */
-.intro-text {
-    flex: 1; /* Allow text to take up remaining space */
+    .intro-img {
+        margin-left: 0;
+        margin-top: 10px;
+    }
 }
-
-.intro-img {
-    margin-left: 20px; /* Adds space between text and image */
-}
-.profile-img {
-    width: 150px; /* Adjust width as needed */
-    height: auto;
-    border-radius: 50%; /* Optional: makes the image round */
-}
-
-
