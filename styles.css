@@ -146,11 +146,11 @@ footer {
 }
 
 .afternoon {
-    color: darkblue;
-    background-color: lightblue;
+    color: rgb(0, 139, 79);
+    background-color: rgb(46, 45, 45);
 }
 
 .evening {
     color: white;
-    background-color: darkblue;
+    background-color: rgb(151, 205, 239);
 }
