@@ -140,3 +140,17 @@ footer {
         margin-top: 10px;
     }
 }
+.morning {
+    color: orange;
+    background-color: lightyellow;
+}
+
+.afternoon {
+    color: darkblue;
+    background-color: lightblue;
+}
+
+.evening {
+    color: white;
+    background-color: darkblue;
+}
